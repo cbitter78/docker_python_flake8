@@ -1,9 +1,9 @@
 # Flake8 docker image
 
-Many of the flake8 docker images use alpine python and make it hard to 
+Many of the flake8 docker images use alpine python and make it hard to
 debug if you run into an issue.  This is a simple docker image that uses CMD and not ENTRYPOINT.
 
-alpine pythond is problmatic and can be slow.  I avoide it.
+alpine python is problmatic and can be slow.  I avoide it.
 
 To use it just use `-v` to mount the source folder under `/flake8` using somthing like this:
 
